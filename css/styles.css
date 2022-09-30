@@ -128,13 +128,6 @@ button {
     
 }
 
-.item-contacts:hover,
-.item-contacts:focus {
-
-    color: var(--accent);
-    
-}
-
 
 .contact .mail,
 .contact .phone {
@@ -198,6 +191,8 @@ button {
     line-height: 1.14;
     letter-spacing: 0.02em;
 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .mail:hover,
@@ -205,7 +200,6 @@ button {
 .phone:hover,
 .phone:focus {
     color: var(--accent);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -219,6 +213,8 @@ button {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -521,7 +517,7 @@ margin-left: auto;
     height: 44px;
     border-radius: 50%;
     fill: #afb1b8;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-social:hover,
@@ -607,7 +603,7 @@ margin-left: auto;
 
     fill: currentColor;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -615,7 +611,6 @@ margin-left: auto;
 .link-clients:focus {
     color: var(--accent);
     border: 1px solid var(--accent);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -653,7 +648,7 @@ margin-left: auto;
 .address-footer:hover,
 .address-footer:focus {
     color: var(--accent);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .logo-footer {
@@ -894,7 +889,7 @@ margin-right: 8px;
     color: var(--white-text-color);
     background-color: var(--accent);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .portfolio .text {
@@ -909,8 +904,7 @@ margin-right: 8px;
 .portfolio .item:hover {
 
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    
 }
 
 .examples {
